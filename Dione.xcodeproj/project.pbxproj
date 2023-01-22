@@ -11,6 +11,7 @@
 		832AB372297CEDDE00502AF2 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 832AB371297CEDDE00502AF2 /* KeyboardKit */; };
 		832AB377297CF64C00502AF2 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AB375297CF64C00502AF2 /* KeyboardView.swift */; };
 		832AB378297CF64C00502AF2 /* CallistoAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AB376297CF64C00502AF2 /* CallistoAutocompleteProvider.swift */; };
+		832AB37B297D2D3A00502AF2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 832AB37A297D2D3A00502AF2 /* Alamofire */; };
 		CB968618297CD70B009BC6BA /* DioneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB968617297CD70B009BC6BA /* DioneApp.swift */; };
 		CB96861A297CD70B009BC6BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB968619297CD70B009BC6BA /* ContentView.swift */; };
 		CB96861C297CD70C009BC6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB96861B297CD70C009BC6BA /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				832AB36F297CEDC000502AF2 /* KeyboardKit in Frameworks */,
+				832AB37B297D2D3A00502AF2 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,7 @@
 			name = Dione;
 			packageProductDependencies = (
 				832AB36E297CEDC000502AF2 /* KeyboardKit */,
+				832AB37A297D2D3A00502AF2 /* Alamofire */,
 			);
 			productName = Dione;
 			productReference = CB968614297CD70B009BC6BA /* Dione.app */;
@@ -206,6 +209,7 @@
 			mainGroup = CB96860B297CD70B009BC6BA;
 			packageReferences = (
 				832AB36D297CEDC000502AF2 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+				832AB379297D2D3A00502AF2 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = CB968615297CD70B009BC6BA /* Products */;
 			projectDirPath = "";
@@ -532,6 +536,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		832AB379297D2D3A00502AF2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -544,6 +556,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 832AB36D297CEDC000502AF2 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
 			productName = KeyboardKit;
+		};
+		832AB37A297D2D3A00502AF2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 832AB379297D2D3A00502AF2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
