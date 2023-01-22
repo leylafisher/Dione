@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		832AB36F297CEDC000502AF2 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 832AB36E297CEDC000502AF2 /* KeyboardKit */; };
 		832AB372297CEDDE00502AF2 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 832AB371297CEDDE00502AF2 /* KeyboardKit */; };
+		832AB377297CF64C00502AF2 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AB375297CF64C00502AF2 /* KeyboardView.swift */; };
+		832AB378297CF64C00502AF2 /* CallistoAutocompleteProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832AB376297CF64C00502AF2 /* CallistoAutocompleteProvider.swift */; };
 		CB968618297CD70B009BC6BA /* DioneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB968617297CD70B009BC6BA /* DioneApp.swift */; };
 		CB96861A297CD70B009BC6BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB968619297CD70B009BC6BA /* ContentView.swift */; };
 		CB96861C297CD70C009BC6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB96861B297CD70C009BC6BA /* Assets.xcassets */; };
@@ -42,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		832AB375297CF64C00502AF2 /* KeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		832AB376297CF64C00502AF2 /* CallistoAutocompleteProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallistoAutocompleteProvider.swift; sourceTree = "<group>"; };
 		CB968614297CD70B009BC6BA /* Dione.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dione.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB968617297CD70B009BC6BA /* DioneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DioneApp.swift; sourceTree = "<group>"; };
 		CB968619297CD70B009BC6BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		CB96862A297CD72D009BC6BA /* Dione Keyboard */ = {
 			isa = PBXGroup;
 			children = (
+				832AB376297CF64C00502AF2 /* CallistoAutocompleteProvider.swift */,
+				832AB375297CF64C00502AF2 /* KeyboardView.swift */,
 				CB96862B297CD72D009BC6BA /* KeyboardViewController.swift */,
 				CB96862D297CD72D009BC6BA /* Info.plist */,
 			);
@@ -244,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832AB378297CF64C00502AF2 /* CallistoAutocompleteProvider.swift in Sources */,
 				CB96862C297CD72D009BC6BA /* KeyboardViewController.swift in Sources */,
+				832AB377297CF64C00502AF2 /* KeyboardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
