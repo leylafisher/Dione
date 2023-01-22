@@ -66,20 +66,30 @@ public extension UITextDocumentProxy {
         tryInsertSpaceAfterAutocomplete()
     }
     
-//    var wordsInsideParentheses: String? {
-//        
-//        let pattern = "\\((.*?)\\)"
-//
-//        do {
-//            let regex = try NSRegularExpression(pattern: pattern)
-//            let matches = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
-//            for match in matches {
-//                let range = match.range(at: 1)
-//                let word = text[Range(range, in: text)!]
-//                print(word)
-//            }
-//        } catch let error {
-//            print("Error: \(error.localizedDescription)")
-//        }
-//    }
+    var wordsInsideParentheses: String? {
+        
+        let pre = currentWordPreCursorPart
+        let post = currentWordPostCursorPart
+        if pre == nil && post == nil { return nil }
+        
+        let text = (pre ?? "") + (post ?? "")
+        var allText = ""
+        
+        let pattern = "\\((.*?)\\)"
+        var word: Substring = Substring()
+
+        do {
+            let regex = try NSRegularExpression(pattern: pattern)
+            let matches = regex.matches(in: text, range: NSRange(text.startIndex..., in: text))
+            for match in matches {
+                let range = match.range(at: 1)
+                word = text[Range(range, in: text)!]
+                print(word)
+            }
+        } catch let error {
+            print("Error: \(error.localizedDescription)")
+        }
+        
+        return String(word)
+    }
 }
