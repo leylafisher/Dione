@@ -11,7 +11,33 @@
 		CB96861A297CD70B009BC6BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB968619297CD70B009BC6BA /* ContentView.swift */; };
 		CB96861C297CD70C009BC6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB96861B297CD70C009BC6BA /* Assets.xcassets */; };
 		CB96861F297CD70C009BC6BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB96861E297CD70C009BC6BA /* Preview Assets.xcassets */; };
+		CB96862C297CD72D009BC6BA /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB96862B297CD72D009BC6BA /* KeyboardViewController.swift */; };
+		CB968630297CD72D009BC6BA /* Dione Keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CB968629297CD72D009BC6BA /* Dione Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB96862E297CD72D009BC6BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB96860C297CD70B009BC6BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB968628297CD72D009BC6BA;
+			remoteInfo = "Dione Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB968634297CD72D009BC6BA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB968630297CD72D009BC6BA /* Dione Keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB968614297CD70B009BC6BA /* Dione.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dione.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +45,20 @@
 		CB968619297CD70B009BC6BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CB96861B297CD70C009BC6BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB96861E297CD70C009BC6BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB968629297CD72D009BC6BA /* Dione Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dione Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB96862B297CD72D009BC6BA /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		CB96862D297CD72D009BC6BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB968611297CD70B009BC6BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB968626297CD72D009BC6BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				CB968616297CD70B009BC6BA /* Dione */,
+				CB96862A297CD72D009BC6BA /* Dione Keyboard */,
 				CB968615297CD70B009BC6BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				CB968614297CD70B009BC6BA /* Dione.app */,
+				CB968629297CD72D009BC6BA /* Dione Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +105,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CB96862A297CD72D009BC6BA /* Dione Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB96862B297CD72D009BC6BA /* KeyboardViewController.swift */,
+				CB96862D297CD72D009BC6BA /* Info.plist */,
+			);
+			path = "Dione Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +124,34 @@
 				CB968610297CD70B009BC6BA /* Sources */,
 				CB968611297CD70B009BC6BA /* Frameworks */,
 				CB968612297CD70B009BC6BA /* Resources */,
+				CB968634297CD72D009BC6BA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB96862F297CD72D009BC6BA /* PBXTargetDependency */,
 			);
 			name = Dione;
 			productName = Dione;
 			productReference = CB968614297CD70B009BC6BA /* Dione.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CB968628297CD72D009BC6BA /* Dione Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB968631297CD72D009BC6BA /* Build configuration list for PBXNativeTarget "Dione Keyboard" */;
+			buildPhases = (
+				CB968625297CD72D009BC6BA /* Sources */,
+				CB968626297CD72D009BC6BA /* Frameworks */,
+				CB968627297CD72D009BC6BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dione Keyboard";
+			productName = "Dione Keyboard";
+			productReference = CB968629297CD72D009BC6BA /* Dione Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +164,9 @@
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					CB968613297CD70B009BC6BA = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					CB968628297CD72D009BC6BA = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
@@ -116,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				CB968613297CD70B009BC6BA /* Dione */,
+				CB968628297CD72D009BC6BA /* Dione Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +197,13 @@
 			files = (
 				CB96861F297CD70C009BC6BA /* Preview Assets.xcassets in Resources */,
 				CB96861C297CD70C009BC6BA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB968627297CD72D009BC6BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +219,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB968625297CD72D009BC6BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB96862C297CD72D009BC6BA /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB96862F297CD72D009BC6BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB968628297CD72D009BC6BA /* Dione Keyboard */;
+			targetProxy = CB96862E297CD72D009BC6BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CB968620297CD70C009BC6BA /* Debug */ = {
@@ -262,6 +355,7 @@
 		CB968623297CD70C009BC6BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +385,7 @@
 		CB968624297CD70C009BC6BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +412,56 @@
 			};
 			name = Release;
 		};
+		CB968632297CD72D009BC6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CYTFH24FS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dione Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dione Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "id.Dione.Dione-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB968633297CD72D009BC6BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2CYTFH24FS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dione Keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dione Keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "id.Dione.Dione-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +479,15 @@
 			buildConfigurations = (
 				CB968623297CD70C009BC6BA /* Debug */,
 				CB968624297CD70C009BC6BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB968631297CD72D009BC6BA /* Build configuration list for PBXNativeTarget "Dione Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB968632297CD72D009BC6BA /* Debug */,
+				CB968633297CD72D009BC6BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
