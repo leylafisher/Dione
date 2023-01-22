@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		832AB36F297CEDC000502AF2 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 832AB36E297CEDC000502AF2 /* KeyboardKit */; };
+		832AB372297CEDDE00502AF2 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = 832AB371297CEDDE00502AF2 /* KeyboardKit */; };
 		CB968618297CD70B009BC6BA /* DioneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB968617297CD70B009BC6BA /* DioneApp.swift */; };
 		CB96861A297CD70B009BC6BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB968619297CD70B009BC6BA /* ContentView.swift */; };
 		CB96861C297CD70C009BC6BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB96861B297CD70C009BC6BA /* Assets.xcassets */; };
@@ -55,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832AB36F297CEDC000502AF2 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,18 +65,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832AB372297CEDDE00502AF2 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		832AB370297CEDDE00502AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CB96860B297CD70B009BC6BA = {
 			isa = PBXGroup;
 			children = (
 				CB968616297CD70B009BC6BA /* Dione */,
 				CB96862A297CD72D009BC6BA /* Dione Keyboard */,
 				CB968615297CD70B009BC6BA /* Products */,
+				832AB370297CEDDE00502AF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +144,9 @@
 				CB96862F297CD72D009BC6BA /* PBXTargetDependency */,
 			);
 			name = Dione;
+			packageProductDependencies = (
+				832AB36E297CEDC000502AF2 /* KeyboardKit */,
+			);
 			productName = Dione;
 			productReference = CB968614297CD70B009BC6BA /* Dione.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +164,9 @@
 			dependencies = (
 			);
 			name = "Dione Keyboard";
+			packageProductDependencies = (
+				832AB371297CEDDE00502AF2 /* KeyboardKit */,
+			);
 			productName = "Dione Keyboard";
 			productReference = CB968629297CD72D009BC6BA /* Dione Keyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -180,6 +198,9 @@
 				Base,
 			);
 			mainGroup = CB96860B297CD70B009BC6BA;
+			packageReferences = (
+				832AB36D297CEDC000502AF2 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+			);
 			productRefGroup = CB968615297CD70B009BC6BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -493,6 +514,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		832AB36D297CEDC000502AF2 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/KeyboardKit/KeyboardKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		832AB36E297CEDC000502AF2 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 832AB36D297CEDC000502AF2 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		832AB371297CEDDE00502AF2 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 832AB36D297CEDC000502AF2 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB96860C297CD70B009BC6BA /* Project object */;
 }
